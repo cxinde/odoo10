@@ -27,7 +27,7 @@ RUN rm -rf fdfs_client \
     && rm -rf fdfs.zip
 
 # 替换掉原有的odoo 模块
-RUN curl -o odoo.zip -SL https://gitee.com/tyibs/odoo_10_dev_lightly/repository/archive/master.zip \
+RUN curl -o odoo.zip -SL https://github.com/cxinde/odoo10_lightly/archive/windows.zip \
         && unzip -q odoo.zip \
         && rm -rf odoo.zip 
 RUN cp /usr/lib/python2.7/dist-packages/odoo/addons/__init__.py odoo_10_dev_lightly/addons/
