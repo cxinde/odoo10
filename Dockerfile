@@ -13,7 +13,7 @@ RUN apt-get install -y --no-install-recommends build-essential libsasl2-dev libl
 	&& pip install rabbitmq \
 	&& pip install celery \
 	&& pip install pika \
-	&& pip install dicttoxml \
+	&& pip install dicttoxml
 
 RUN apt-get install unzip 
 # 安装FDFS客户端驱动
