@@ -13,7 +13,7 @@ RUN apt-get install -y --no-install-recommends build-essential libsasl2-dev libl
 	&& pip install rabbitmq \
 	&& pip install celery \
 	&& pip install pika \
-	&& pip install dicttoxml
+	&& pip install dicttoxml \
 
 RUN apt-get install unzip 
 # 安装FDFS客户端驱动
@@ -38,8 +38,8 @@ RUN rm -rf /usr/lib/python2.7/dist-packages/odoo/addons \
 #RUN ls -al /usr/lib/python2.7/dist-packages/odoo/addons 
 # 添加中文字体
 # RUN apt-get install -y --no-install-recommends ttf-wqy-microhei ttf-wqy-zenhei
-ADD zh_CN/ /usr/share/fonts
-RUN fc-cache /usr/share/fonts/zh_CN
+#ADD zh_CN/ /usr/share/fonts
+#RUN fc-cache /usr/share/fonts/zh_CN
 
 # create fdfs client config folder
 RUN mkdir -p /etc/fdfs/
