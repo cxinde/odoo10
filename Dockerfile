@@ -1,5 +1,5 @@
 FROM odoo:10.0
-MAINTAINER tedi3231  <tedi3231@qq.com>
+MAINTAINER cxinde <cxinde@outlook.com>
 
 USER root
 # Install some deps, lessc and less-plugin-clean-css, and wkhtmltopdf
