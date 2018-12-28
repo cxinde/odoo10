@@ -30,11 +30,11 @@ RUN rm -rf fdfs_client \
 RUN curl -o odoo.zip -SL https://github.com/cxinde/odoo10_lightly/archive/windows.zip \
         && unzip -q odoo.zip \
         && rm -rf odoo.zip 
-RUN cp /usr/lib/python2.7/dist-packages/odoo/addons/__init__.py odoo_10_dev_lightly/addons/
+RUN cp /usr/lib/python2.7/dist-packages/odoo/addons/__init__.py odoo10_lightly/addons/
 RUN rm -rf /usr/lib/python2.7/dist-packages/odoo/addons \
-        && mv odoo_10_dev_lightly/addons /usr/lib/python2.7/dist-packages/odoo/ \
-        && mv odoo_10_dev_lightly/odoo/addons/* /usr/lib/python2.7/dist-packages/odoo/addons \
-        && rm -rf odoo_10_dev_lightly/ 
+        && mv odoo10_lightly/addons /usr/lib/python2.7/dist-packages/odoo/ \
+        && mv odoo10_lightly/odoo/addons/* /usr/lib/python2.7/dist-packages/odoo/addons \
+        && rm -rf odoo10_lightly/ 
 #RUN ls -al /usr/lib/python2.7/dist-packages/odoo/addons 
 # 添加中文字体
 # RUN apt-get install -y --no-install-recommends ttf-wqy-microhei ttf-wqy-zenhei
