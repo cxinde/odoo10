@@ -38,6 +38,7 @@ RUN rm -rf /usr/lib/python2.7/dist-packages/odoo/addons \
 #RUN ls -al /usr/lib/python2.7/dist-packages/odoo/addons 
 # 添加中文字体
 # RUN apt-get install -y --no-install-recommends ttf-wqy-microhei ttf-wqy-zenhei
+RUN mkdir /usr/share/fonts/zh_CN
 ADD zh_CN/ /usr/share/fonts/zh_CN
 RUN fc-cache /usr/share/fonts/zh_CN
 
