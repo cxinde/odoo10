@@ -41,7 +41,7 @@ RUN rm -rf /usr/lib/python2.7/dist-packages/odoo/addons \
 
 WORKDIR /usr/share/fonts
 ADD zh_CN.zip ./
-RUN unzip -q zh_CN.zip && fc-cache zh_CN
+RUN unzip zh_CN.zip -d ./zh_CN && fc-cache zh_CN
 
 WORKDIR /
 
